@@ -1,0 +1,9 @@
+img {
+    width : 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.selected {
+    opacity: 0.5; 
+  }
