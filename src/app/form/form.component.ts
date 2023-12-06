@@ -11,7 +11,7 @@ import { CommunicationService } from '../communication.service';
 export class FormComponent {
   model: any = {};
 
-  constructor(private router: Router, private communicationService: CommunicationService) {}
+  constructor(private router: Router, private communicationService: CommunicationService) { }
 
   onSubmit(form: NgForm) {
     const imageTerms = [

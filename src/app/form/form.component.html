@@ -1,39 +1,39 @@
-<h1 class = "center">Picture Matching Game</h1>
+<h1 class="center">Picture Matching Game</h1>
 
-<div class = "center">
+<div class="center">
 
-<form (ngSubmit)="onSubmit(wordForm)" #wordForm="ngForm">
+  <form (ngSubmit)="onSubmit(wordForm)" #wordForm="ngForm">
 
-  <mat-form-field>
-    <mat-label>Image Term 1</mat-label>
-    <input matInput type="text" id="imageTerm1" name="imageTerm1" [(ngModel)]="model.imageTerm1" required>
-  </mat-form-field>
+    <mat-form-field>
+      <mat-label>Image Term 1</mat-label>
+      <input matInput type="text" id="imageTerm1" name="imageTerm1" [(ngModel)]="model.imageTerm1" required>
+    </mat-form-field>
 
-  <mat-form-field>
-    <mat-label>Image Term 2</mat-label>
-    <input matInput type="text" id="imageTerm2" name="imageTerm2" [(ngModel)]="model.imageTerm2" required>
-  </mat-form-field>
+    <mat-form-field>
+      <mat-label>Image Term 2</mat-label>
+      <input matInput type="text" id="imageTerm2" name="imageTerm2" [(ngModel)]="model.imageTerm2" required>
+    </mat-form-field>
 
-  <mat-form-field>
-    <mat-label>Image Term 3</mat-label>
-    <input matInput type="text" id="imageTerm3" name="imageTerm3" [(ngModel)]="model.imageTerm3" required>
-  </mat-form-field>
+    <mat-form-field>
+      <mat-label>Image Term 3</mat-label>
+      <input matInput type="text" id="imageTerm3" name="imageTerm3" [(ngModel)]="model.imageTerm3" required>
+    </mat-form-field>
 
-  <mat-form-field>
-    <mat-label>Image Term 4</mat-label>
-    <input matInput type="text" id="imageTerm4" name="imageTerm4" [(ngModel)]="model.imageTerm4" required>
-  </mat-form-field>
+    <mat-form-field>
+      <mat-label>Image Term 4</mat-label>
+      <input matInput type="text" id="imageTerm4" name="imageTerm4" [(ngModel)]="model.imageTerm4" required>
+    </mat-form-field>
 
-  <br>
-  
-  <button mat-raised-button color="primary" type="submit">Submit</button>
-</form>
+    <br>
 
-<p class = "smush">
-  Welcome to my picture matching game. This application generates a picture matching puzzle based on 
-  the search terms you provide for it. Each term you enter will have four pictures associated with it
-  in the puzzle. Complete the puzzle by selecting all four groups of four images. 
-</p>
+    <button mat-raised-button color="primary" type="submit">Submit</button>
+  </form>
+
+
+  <p class="smush">
+    Welcome to my picture matching game. This application generates a picture matching puzzle based on
+    the search terms you provide for it. Each term you enter will have four pictures associated with it
+    in the puzzle. Complete the puzzle by selecting all four groups of four images.
+  </p>
 
 </div>
-

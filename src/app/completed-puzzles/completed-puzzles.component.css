@@ -1,0 +1,14 @@
+mat-card {
+    background-color: #555;
+}
+
+p {
+    color: white;
+}
+
+.spacer {
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+}

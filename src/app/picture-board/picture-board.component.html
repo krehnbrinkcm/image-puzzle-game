@@ -1,18 +1,19 @@
-<div class="image-grid">
-    <ng-container *ngFor="let rowIndex of getRowIndices()">
-      <div class="image-row">
-        <ng-container *ngFor="let colIndex of [0, 1, 2, 3]">
-          <div class="image-container">
-            <ng-container *ngIf="imageLinkArray[rowIndex * 4 + colIndex]">
-              <img
-                [src]="imageLinkArray[rowIndex * 4 + colIndex].url"
-                alt="Unsplash Image"
-                [class.dimmed]="imageLinkArray[rowIndex * 4 + colIndex].dimmed"
-                (click)="toggleSelection(imageLinkArray[rowIndex * 4 + colIndex])"
-              />
-            </ng-container>
-          </div>
-        </ng-container>
-      </div>
-    </ng-container>
-  </div>
+<mat-card>
+  <mat-card-content>
+    <div class="image-grid">
+      <ng-container *ngFor="let rowIndex of getRowIndices()">
+        <div class="image-row">
+          <ng-container *ngFor="let colIndex of [0, 1, 2, 3]">
+            <div class="image-container">
+              <ng-container *ngIf="imageLinkArray[rowIndex * 4 + colIndex]">
+                <img [src]="imageLinkArray[rowIndex * 4 + colIndex].url" alt="Unsplash Image"
+                  [class.dimmed]="imageLinkArray[rowIndex * 4 + colIndex].dimmed"
+                  (click)="toggleSelection(imageLinkArray[rowIndex * 4 + colIndex])" />
+              </ng-container>
+            </div>
+          </ng-container>
+        </div>
+      </ng-container>
+    </div>
+  </mat-card-content>
+</mat-card>

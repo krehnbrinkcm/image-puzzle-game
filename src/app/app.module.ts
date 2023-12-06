@@ -12,6 +12,9 @@ import { FormComponent } from './form/form.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CommunicationService } from './communication.service';
 import { HeaderComponent } from './header/header.component';
+import {MatCardModule} from '@angular/material/card';
+import { CompletedPuzzlesComponent } from './completed-puzzles/completed-puzzles.component';
+
 
 
 @NgModule({
@@ -20,6 +23,7 @@ import { HeaderComponent } from './header/header.component';
     PictureBoardComponent,
     FormComponent,
     HeaderComponent,
+    CompletedPuzzlesComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,8 @@ import { HeaderComponent } from './header/header.component';
     MatFormFieldModule,
     MatButtonModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatCardModule
   ],
   providers: [CommunicationService],
   bootstrap: [AppComponent]
